@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5, 5, 32);
+}
+
+.container {
+  display: flex;
+  font-family: Inter;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  padding: 20px;
+  width: 500px;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  font-family: Inter;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.cash {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.topg {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 4px rgb(72, 72, 72);
+  padding: 30px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.tristan {
+  width: 2px;
+  height: 60%;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  background-color: rgb(72, 72, 72);
+}
+
+.description {
+  flex: 1;
+}
+
+.item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin-top: 15px;
+  box-shadow: 0px 0px 4px rgb(72, 72, 72);
+}
+
+.item.income {
+  border-right: 6px solid green;
+}
+
+.item.expenses {
+  border-right: 6px solid red;
+}
+
+.addtransaction form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(196, 133, 255);
+  border: none;
+  color: white;
+  font-family: Montserrat;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .topg {
+    gap: 30px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .addtransaction form {
+    gap: 15px;
+  }
+}
